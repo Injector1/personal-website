@@ -1,0 +1,373 @@
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url("../fonts/proximanova/ProximaNova-Bold.ttf");
+}
+
+@font-face {
+    font-family: PressStart;
+    src: url("../fonts/ps2p/PressStart2P-Regular.ttf");
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .photo {
+        order: 0;
+    }
+
+    .name {
+        order: 1;
+    }
+
+    .right-panel {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 371px) {
+
+    .right-panel > .el {
+        margin-right: 0;
+    }
+}
+
+.main-info {
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #0F0E17;
+    padding-top: 2%;
+    margin: 0;
+    padding-bottom: 7rem;
+}
+
+.logo {
+    text-align: center;
+    font-family: ProximaNova-Bold;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF8906;
+    transition: 1s;
+}
+
+.information-prof {
+    font-size: 48px;
+    color: #A7A9BE;
+    font-family: RobotoRegular;
+    overflow: hidden;
+}
+
+.header-menu {
+    display: grid;
+    grid-area: header;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 100px);
+}
+
+.menu-element {
+    width: 1fr;
+    color: white;
+    font-family: ProximaNova-Bold;
+    text-align: center;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.right-panel > .el {
+    margin-right: 10%;
+}
+
+.information {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.name {
+    text-align: center;
+    color: white;
+    font-family: ProximaNova-Bold;
+    font-size: 64px;
+}
+
+.photo {
+    text-align: center;
+}
+
+.el:hover {
+    color: #FF8906;
+    text-shadow: #FF8906;
+    transition: 1s;
+}
+
+.technologies-block {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.technologies {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: repeat(2, minmax(300px, 1fr));
+    align-items: center;
+}
+
+.technologies-head > h1 {
+    padding: 0;
+    margin: 0;
+    font-family: ProximaNova-Bold;
+    font-size: 64px;
+    text-align: center;
+}
+
+.technologies-head > p {
+    font-family: RobotoRegular;
+    font-size: 48px;
+    text-align: center;
+}
+
+.tech-card {
+    background: #0F0E17;
+    margin: 2%;
+    height: 300px;
+    padding: 2%;
+}
+
+.tech-card > h1 {
+    text-align: center;
+    color: white;
+    font-family: ProximaNova-Bold;
+    font-size: 48px;
+}
+
+.tech-card > p {
+    text-align: center;
+    color: #A7A9BE;
+    font-family: RobotoRegular;
+    font-size: 36px;
+}
+
+.console {
+    color: #FF8906;
+}
+
+.projects {
+    padding-left: 10%;
+    padding-right: 10%;
+    background: #0F0E17;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+/*.projects-list{
+    overflow: auto;
+    height: 1000px;
+}*/
+.project-card {
+    background: #fffffe;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    word-wrap: break-word;
+    font-family: RobotoRegular;
+    font-size: 36px;
+    margin: 2%;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+
+}
+
+
+svg {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.projects-title {
+    visibility: visible;
+    position: sticky;
+    top: 6rem;
+    padding-top: 1%;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+}
+
+.projects-title > h1 {
+    font-family: ProximaNova-Bold;
+    color: #fffffe;
+    font-size: 48px;
+}
+
+.projects-title > p {
+    font-family: RobotoRegular;
+    color: #a7a9be;
+    font-size: 36px;
+}
+
+.project-card > h1 {
+    font-family: ProximaNova-Bold;
+    font-size: 36px;
+}
+
+.project-card > p {
+    font-size: 28px;
+    color: #2e2f3e;
+    font-family: RobotoRegular;
+}
+
+.project-card > h2 {
+    font-family: ProximaNova-Bold;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin-right: 0.6rem;
+    margin-bottom: 0.6rem;
+    padding: 1%;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #ff8906;
+    color: #fffffe;
+}
+.email{
+    display: grid;
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.email-form > input{
+    font-family: RobotoRegular;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 1%;
+    background: white;
+    border-color: black;
+}
+
+
+@media screen and (max-width: 400px) {
+    .name > h1 {
+        font-size: 48px;
+    }
+
+    .name > p {
+        font-size: 36px;
+    }
+
+    .technologies-head > h1 {
+        font-size: 48px;
+    }
+
+    .technologies-head > p {
+        font-size: 36px;
+    }
+    .tech-card > h1 {
+        text-align: center;
+        color: white;
+        font-family: ProximaNova-Bold;
+        font-size: 36px;
+    }
+
+    .tech-card > p {
+        text-align: center;
+        color: #A7A9BE;
+        font-family: RobotoRegular;
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 334px) {
+
+    .right-panel > .el {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .technologies {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(2, minmax(300px, 1fr));
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    svg {
+        display: none;
+    }
+
+    .projects-title {
+        visibility: visible;
+        position: sticky;
+        top: 0;
+        padding-top: 1%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .projects-title > h1 {
+        font-family: ProximaNova-Bold;
+        color: #fffffe;
+        font-size: 48px;
+    }
+
+    .projects-title > p {
+        font-family: RobotoRegular;
+        color: #a7a9be;
+        font-size: 36px;
+    }
+}
