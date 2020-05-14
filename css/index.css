@@ -25,7 +25,7 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    img {
+    .photo > img {
         width: 300px;
         height: 300px;
     }
@@ -186,10 +186,6 @@ a:hover {
     font-size: 36px;
 }
 
-.console {
-    color: #FF8906;
-}
-
 .projects {
     padding-left: 10%;
     padding-right: 10%;
@@ -282,21 +278,25 @@ svg {
     background-color: #ff8906;
     color: #fffffe;
 }
-.email{
-    display: grid;
+.contacts{
     text-align: center;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-.email-form > input{
-    font-family: RobotoRegular;
-    font-size: 40px;
-    border-radius: 10px;
-    padding: 1%;
-    background: white;
-    border-color: black;
+    padding: 7rem;
 }
 
+.head-line{
+    font-family: ProximaNova-Bold;
+    font-size: 48px;
+    margin-bottom: 7rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon{
+    margin-bottom: 5%;
+}
 
 @media screen and (max-width: 400px) {
     .name > h1 {
@@ -327,12 +327,27 @@ svg {
         font-family: RobotoRegular;
         font-size: 28px;
     }
+
+    .contacts{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 334px) {
 
     .right-panel > .el {
         margin-right: 0;
+    }
+
+    .projects{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .technologies{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
