@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: ProximaNova-Bold;
     src: url("../fonts/proximanova/ProximaNova-Bold.ttf");
@@ -66,7 +68,7 @@ body {
 
 .logo {
     text-align: center;
-    font-family: ProximaNova-Bold;
+    font-family: monospace;
     color: white;
 }
 
@@ -88,7 +90,7 @@ a:hover {
 .information-prof {
     font-size: 48px;
     color: #A7A9BE;
-    font-family: RobotoRegular;
+    font-family: monospace;
     overflow: hidden;
 }
 
@@ -103,7 +105,7 @@ a:hover {
 .menu-element {
     width: 1fr;
     color: white;
-    font-family: ProximaNova-Bold;
+    font-family: monospace;
     text-align: center;
 }
 
@@ -127,7 +129,8 @@ a:hover {
 .name {
     text-align: center;
     color: white;
-    font-family: ProximaNova-Bold;
+    font-family: Montserrat;
+    font-weight: 700;
     font-size: 64px;
 }
 
@@ -158,13 +161,15 @@ a:hover {
 .technologies-head > h1 {
     padding: 0;
     margin: 0;
-    font-family: ProximaNova-Bold;
+    font-family: Montserrat;
+    font-weight: 700;
     font-size: 64px;
     text-align: center;
 }
 
 .technologies-head > p {
-    font-family: RobotoRegular;
+    font-family: Montserrat;
+    font-weight: 500;
     font-size: 48px;
     text-align: center;
 }
@@ -179,14 +184,15 @@ a:hover {
 .tech-card > h1 {
     text-align: center;
     color: white;
-    font-family: ProximaNova-Bold;
+    font-family: Montserrat;
+    font-weight: 700;
     font-size: 48px;
 }
 
 .tech-card > p {
     text-align: center;
     color: #A7A9BE;
-    font-family: RobotoRegular;
+    font-family: Montserrat;
     font-size: 36px;
 }
 
@@ -211,7 +217,7 @@ a:hover {
     width: auto;
     height: auto;
     word-wrap: break-word;
-    font-family: RobotoRegular;
+    font-family: Montserrat;
     font-size: 36px;
     margin: 2%;
     margin-bottom: 2rem;
@@ -244,32 +250,36 @@ svg {
 }
 
 .projects-title > h1 {
-    font-family: ProximaNova-Bold;
+    font-family: Montserrat;
+    font-weight: 700;
     color: #fffffe;
     font-size: 48px;
 }
 
 .projects-title > p {
-    font-family: RobotoRegular;
+    font-family: Montserrat;
+    font-weight: 500;
     color: #a7a9be;
     font-size: 36px;
 }
 
 .project-card > h1 {
-    font-family: ProximaNova-Bold;
+    font-family: Montserrat;
+    font-weight: 700;
     font-size: 36px;
 }
 
 .project-card > p {
     font-size: 28px;
     color: #2e2f3e;
-    font-family: RobotoRegular;
+    font-family: Montserrat;
+    font-weight: 500;
 }
 
 .project-card > h2 {
-    font-family: ProximaNova-Bold;
+    font-family: Montserrat;
+    font-weight: 600;
     font-size: 28px;
-    font-weight: 700;
 }
 
 .tags {
@@ -279,12 +289,13 @@ svg {
 }
 
 .tag {
+    font-family: Montserrat;
+    font-weight: 500;
     margin-right: 0.6rem;
     margin-bottom: 0.6rem;
     padding: 1vh;
     border-radius: 3px;
     font-size: 14px;
-    font-weight: 700;
     background-color: #ff8906;
     color: #fffffe;
     border: 1px solid #FF8906;
@@ -294,27 +305,59 @@ svg {
     color: #FF8906;
     background-color: white;
 }
+
 .contacts {
     text-align: center;
     padding: 7rem;
 }
 
 .head-line {
-    font-family: ProximaNova-Bold;
+    font-family: Montserrat;
+    font-weight: 700;
     font-size: 48px;
     margin-bottom: 7rem;
+    text-align: center;
 }
 
 .icons {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .icon {
-    margin-bottom: 5%;
+    margin: 1% 2% 5% 2%;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 30px;
 }
 
+.gmail-link, .linkedin-link, .instagram-link {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.gmail-link:hover > span {
+    color: red;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.linkedin-link:hover > span {
+    background-color: #0366c3;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s;
+}
+.instagram-link:hover {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, red, fuchsia);
+    transition: 1s;
+}
 @media screen and (max-width: 400px) {
     .name > h1 {
         font-size: 48px;
@@ -335,15 +378,19 @@ svg {
     .tech-card > h1 {
         text-align: center;
         color: white;
-        font-family: ProximaNova-Bold;
+        font-family: Montserrat;
         font-size: 36px;
     }
 
     .tech-card > p {
         text-align: center;
         color: #A7A9BE;
-        font-family: RobotoRegular;
+        font-family: Montserrat;
         font-size: 28px;
+    }
+
+    .project-card {
+        padding: 2vh 3vh 2vh 3vh;
     }
 
     .contacts {
@@ -393,13 +440,13 @@ svg {
     }
 
     .projects-title > h1 {
-        font-family: ProximaNova-Bold;
+        font-family: Montserrat;
         color: #fffffe;
         font-size: 48px;
     }
 
     .projects-title > p {
-        font-family: RobotoRegular;
+        font-family: Montserrat;
         color: #a7a9be;
         font-size: 36px;
     }

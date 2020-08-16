@@ -14,8 +14,8 @@
                     class="console">"</span></h1>
         </div>
         <div class="menu-element right-panel">
-            <div class="el"><a href="#tech"><h1>Technologies </h1></a></div>
-            <div><a href="#projects"><h1>Projects</h1></a></div>
+            <div class="el"><a href="#tech"><h1>TECHNOLOGIES</h1></a></div>
+            <div><a href="#projects"><h1>PROJECTS</h1></a></div>
         </div>
 
     </div>
@@ -50,12 +50,12 @@
     </div>
     <div class="projects-list" id="project-list">
         <div class="project-card" v-for="project in projects" @click="linkToGitHub(project.link)">
-            <h1>{{ project.title }}</h1>
+            <h1>{{ project.name }}</h1>
             <p>{{ project.description ? project.description : "There is no description for this project:("}}</p>
             <h2>Tags:</h2>
             <div class="tags">
-                <div class="tag" v-for="tag in project.tags">
-                    {{ tag }}
+                <div class="tag">
+                    {{ project.language }}
                 </div>
             </div>
         </div>
@@ -64,16 +64,14 @@
 <div class="contacts">
     <div class="head-line">Contact Me</div>
     <div class="icons">
-        <div class="icon">
-            <a href="mailto:sunrising005@gmail.com?subject=WebSite" target="_blank"><img src="img/gmail.png"
-                                                                                         width="100%" height="100%"></a>
+        <div class="icon gmail-link">
+            <span class="gmail">G</span>mail
         </div>
-        <div class="icon">
-            <a href="#" target="_blank"><img src="img/linkedin.png" width="100%" height="100%"></a>
+        <div class="icon linkedin-link">
+            Linked<span class="linkedin">in</span>
         </div>
-        <div class="icon">
-            <a href="https://www.instagram.com/__injector__/" target="_blank"><img src="img/instagram.png" width="100%"
-                                                                                   height="100%"></a>
+        <div class="icon instagram-link">
+            Instagram
         </div>
     </div>
 </div>
